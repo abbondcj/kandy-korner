@@ -1,0 +1,193 @@
+{
+    "customers": [
+        {
+            "id": 1,
+            "name": "Mike Jones",
+            "state": "VA",
+            "email": "mj@mail.com"
+        }, 
+        {
+            "id": 2,
+            "name": "Sarah Smith",
+            "state": "NY",
+            "email": "nysarah@mail.com"
+        },
+        {
+            "id": 3,
+            "name": "Oprah Winfrey",
+            "state": "TN",
+            "email": "yougetacar@mail.com"
+        },
+        {
+            "id": 4,
+            "name": "Tom Brady",
+            "state": "FL",
+            "email": "tb@mail.com"
+        },
+        {
+            "id": 5,
+            "name": "Tyler Childers",
+            "state": "TN",
+            "email": "nysarah@mail.com"
+        }
+
+    ],
+    "employees": [
+        {
+            "id": 1,
+            "name": "Dave Johnson",
+            "title": "Manager",
+            "store": 1
+        },
+        {
+            "id": 2,
+            "name": "Erin Johnson",
+            "title": "Manager",
+            "store": 2
+        }
+    ],
+    "locations": [
+        {
+            "id": 1,
+            "state": "NY",
+            "city": "Montauk",
+            "open": 8,
+            "close": 8,
+            "delivery": true,
+            "inventory": [
+                {
+                    "productId": 1,
+                    "quantity": 22
+                },
+                {
+                    "productId": 2,
+                    "quantity": 2
+                },
+                {
+                    "productId": 3,
+                    "quantity": 9
+                },
+                {
+                    "productId": 5,
+                    "quantity": 15
+                }
+            ]
+    
+        },
+        {
+            "id": 2,
+            "state": "FL",
+            "city": "Tampa",
+            "open": 9,
+            "close": 10,
+            "delivery": false,
+            "inventory": [
+                {
+                    "productId": 1,
+                    "quantity": 22
+                },
+                {
+                    "productId": 4,
+                    "quantity": 9
+                },
+                {
+                    "productId": 5,
+                    "quantity": 15
+                }
+            ]
+    
+        },
+        {
+            "id": 3,
+            "state": "TN",
+            "city": "Brentwood",
+            "open": 8,
+            "close": 8,
+            "delivery": true,
+            "inventory": [
+                {
+                    "productId": 4,
+                    "quantity": 1000
+                }
+            ]
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "Peanute butter cups",
+            "type": "Chocolate",
+            "price": 2.50
+        },{
+            "id": 2,
+            "name": "Gummy worms",
+            "type": "Gummy",
+            "price": 1.99
+        },
+        {
+            "id": 3,
+            "name": "Lollipops",
+            "type": "Hard candy",
+            "price": 1
+        },
+        {
+            "id": 4,
+            "name": "Sourfuls",
+            "type": "Gummy",
+            "price": 3
+        }, 
+        {
+            "id": 5,
+            "name": "Juicy Fruit",
+            "type": "Gum",
+            "price": 1.50
+        }
+    ],
+    "purchases": [
+        {
+            "id": 1,
+            "date": "5/1/2022",
+            "customerId": 1,
+            "storeId": 1,
+            "delivery": false,
+            "items": [
+                {
+                    "productId": 2,
+                    "quantity": 1
+                },
+                {
+                    "productId": 3,
+                    "quantity": 2
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "date": "5/3/2022",
+            "customerId": 3,
+            "storeId": 2,
+            "delivery": false,
+            "items": [
+                {
+                    "productId": 1,
+                    "quantity": 3
+                }
+            ]
+        }, 
+        {
+            "id": 3,
+            "date": "5/6/2022",
+            "customerId": 4,
+            "storeId": 3,
+            "delivery": true,
+            "items": [
+                {
+                    "productId": 4,
+                    "quantity": 100
+                }
+            ]
+        }
+
+    ]
+
+}
