@@ -1,6 +1,21 @@
-import React from 'react'
+import React, { useState, useEffect} from "react"
 
-export const ProductList = ({products}) => {
+export const ProductList = () => {
+    const [products, getProducts] = useState([])
+
+    useEffect(
+        () => {
+          fetch("http://localhost:8088/products?_sort=productTypeId&_order=asc&_expand=productType")
+            .then(res => res.json())
+              .then(
+                (data) => {
+                  getProducts(data)
+                }
+              )
+        },
+        []
+    )
+
   return (
     <div>
         {

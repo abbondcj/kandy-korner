@@ -1,6 +1,20 @@
-import React from 'react'
+import React, { useState, useEffect} from "react"
 
-export const LocationList = ({locations}) => {
+export const LocationList = () => {
+  const [locations, getLocations] = useState([])
+
+  useEffect(
+    () => {
+      fetch("http://localhost:8088/locations")
+        .then(res => res.json())
+          .then(
+            (data) => {
+              getLocations(data)
+            }
+          )
+    },
+    []
+  )
   return (
     <div id="locations">
       {
